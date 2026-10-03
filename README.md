@@ -1,13 +1,25 @@
 # SunTools
 
-Zestaw darmowych narzędzi desktopowych dla programistów **Go** z rodziny **SunGo**.
-Każde narzędzie to **jeden plik `.exe`**: bez instalatora i bez zależności, wystarczy pobrać i uruchomić.
+Zestaw darmowych narzędzi desktopowych dla programistów **Go** i **embedded**, z rodziny **SunGo**.
+Każde narzędzie to **jeden plik `.exe`**: bez instalatora, wystarczy pobrać i uruchomić.
+
+## 🇬🇧 English
+
+**SunTools** is a set of free, single-file Windows desktop tools for Go and embedded developers:
+
+- **SunWebUI Editor**: drag-and-drop GUI designer that exports HTML/CSS/JS plus a Go backend template.
+- **SunGo DB Designer**: visual database designer that generates Go structs, SQL migrations, CRUD on `database/sql` and validation. Supports SQLite, PostgreSQL and MySQL/MariaDB.
+- **SunMD View**: ad-free Markdown viewer with table of contents, search, live reload, source view, themes, HTML export and `.md` file association.
+- **SunDEBUnal**: serial port (COM/UART) terminal for embedded work: text/HEX modes, built-in VT220/ANSI emulator, F1–F8 macro keys, signal lines, auto port detection, device-to-terminal commands, logging.
+
+---
 
 | Narzędzie | Do czego służy | Pobierz |
 |---|---|---|
 | 🎨 **SunWebUI Edytor** (SunGo GUI Builder) | wizualne projektowanie interfejsu → HTML/CSS/JS + szablon backendu Go | [v01.17.00](SunWebUI_edytor_v01.17.00.exe) |
 | 🗄️ **SunGo DB Designer** | projektowanie bazy danych na diagramie → struktury Go, migracje SQL, CRUD | [v01.00.00-beta-17](SunDB_designer_v01.00.00-beta-17.exe) |
 | 📖 **SunMD View** | szybka przeglądarka plików Markdown | [v01.01.00](SunMDView_v01.01.00.exe) |
+| 🔌 **SunDEBUnal** | terminal portu szeregowego (COM/UART) z emulatorem VT220 | [v2.0.0 (forum)](https://forum.lothar-team.pl) |
 
 ---
 
@@ -48,6 +60,20 @@ Przeglądarka plików `.md`, bez reklam.
 - linki między plikami `.md`, eksport do **HTML** i druk,
 - jednym kliknięciem **skojarzenie plików `.md`** z programem, z własną ikoną.
 
+## 🔌 SunDEBUnal
+
+Terminal portu szeregowego do testowania mikrokontrolerów i modułów (ESP8266, Arduino, STM32, GSM itd.). To nie jest tylko okienko z tekstem:
+
+- tryb **tekstowy (UTF-8)** i **HEX**, wysyłanie tekstu, komend i ciągów HEX,
+- wbudowany **emulator terminala VT220 / ANSI** z kolorami i pełnym ekranem (Alt+Enter); oprogramowanie w mikrokontrolerze może rysować menu i okna jak w starych terminalach,
+- **przyciski F1–F8** z własnymi komendami i **szybkie kody**, np. komendy AT dla ESP8266,
+- podgląd i sterowanie **liniami sygnałowymi** (DTR, RTS…),
+- automatyczne wykrywanie portów; po odłączeniu urządzenia USB port sam się zamyka,
+- **komendy od urządzenia**: program w mikrokontrolerze może przez UART kazać terminalowi zapiszczeć, zaznaczyć punkt w logu albo przekierować dane do osobnego okna,
+- zapis logu do pliku, koder/dekoder **Base64**, tryb **terminala dyskowego (HDD)** do serwisowania dysków przez UART.
+
+Napisany w C# (WinForms) i wymaga **.NET Framework 3.5** (Windows: Panel sterowania → Włącz lub wyłącz funkcje systemu Windows). Najnowsza wersja jest na [forum Lothar TeaM](https://forum.lothar-team.pl).
+
 ---
 
 ## Wymagania
@@ -59,17 +85,11 @@ Przeglądarka plików `.md`, bez reklam.
 
 ## Technologia
 
-Go + [webview_go](https://github.com/webview/webview_go) (WebView2). Interfejs jest wbudowany w plik wykonywalny. Wszystkie narzędzia mają wersję **polską i angielską**.
+Narzędzia SunGo: Go + [webview_go](https://github.com/webview/webview_go) (WebView2), interfejs wbudowany w plik wykonywalny. SunDEBUnal: C# WinForms. Wszystkie narzędzia mają wersję **polską i angielską**.
 
 ---
 
-## 🇬🇧 English
 
-**SunTools** is a set of free, single-file desktop tools for Go developers (Windows 10/11, WebView2):
-
-- **SunWebUI Editor**: drag-and-drop GUI designer that exports HTML/CSS/JS plus a Go backend template.
-- **SunGo DB Designer**: visual database designer that generates Go structs, SQL migrations, CRUD on `database/sql` and validation. Supports SQLite, PostgreSQL and MySQL/MariaDB.
-- **SunMD View**: ad-free Markdown viewer with table of contents, search, live reload, source view, themes, HTML export and `.md` file association.
 
 ---
 
