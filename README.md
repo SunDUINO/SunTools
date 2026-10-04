@@ -18,7 +18,7 @@ Każde narzędzie to **jeden plik `.exe`**: bez instalatora, wystarczy pobrać i
 |---|---|---|
 | 🎨 **SunWebUI Edytor** (SunGo GUI Builder) | wizualne projektowanie interfejsu → HTML/CSS/JS + szablon backendu Go | [v01.17.00](SunWebUI_edytor_v01.17.00.exe) |
 | 🗄️ **SunGo DB Designer** | projektowanie bazy danych na diagramie → struktury Go, migracje SQL, CRUD | [v01.00.00-beta-17](SunDB_designer_v01.00.00-beta-17.exe) |
-| 📖 **SunMD View** | szybka przeglądarka plików Markdown | [v01.01.00](SunMDView_v01.01.00.exe) |
+| 📖 **SunMD View** | szybka przeglądarka plików Markdown | [v02.00.00](SunMDView_v02.00.00.exe) |
 | 🔌 **SunDEBUnal** | terminal portu szeregowego (COM/UART) z emulatorem VT220 | [v2.0.0 (forum)](https://forum.lothar-team.pl) |
 
 ---
