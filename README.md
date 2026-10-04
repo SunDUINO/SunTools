@@ -13,17 +13,24 @@ Każde narzędzie to **jeden plik `.exe`**: bez instalatora, wystarczy pobrać i
 - **SunDEBUnal**: serial port (COM/UART) terminal for embedded work: text/HEX modes, built-in VT220/ANSI emulator, F1–F8 macro keys, signal lines, auto port detection, device-to-terminal commands, logging.
 
 ---
+---
+
 # ⚠️ SunTools a Windows Defender: -- > **fałszywy alarm**
+
+(**Funkcja `removeZoneIdentifier()` została usunięta z Programów**) 
 
 Kilka osób mogło zobaczyć, że **Windows Defender przeniósł któryś program do kwarantanny**. Zgłoszenie wyglądało tak:
 
-> **Behavior:Win32/DefenseEvasion.A!ml** lub podobny..
+> **Behavior:Win32/DefenseEvasion.A!ml**
 
 **Spokojnie, w programie nie ma wirusa.** Oto, co się stało.
 
-To nie jest znaleziony wirus ani podejrzany kawałek kodu. Końcówka **!ml** oznacza ocenę **uczenia maszynowego na podstawie zachowania programu**. Defender patrzy, *co program robi*, i jeśli przypomina to sztuczki złośliwego oprogramowania, na wszelki wypadek blokuje plik. „DefenseEvasion” to po polsku mniej więcej „omijanie zabezpieczeń”.
+To nie jest znaleziony wirus ani podejrzany kawałek kodu. Końcówka **!ml** oznacza ocenę 
+**uczenia maszynowego na podstawie zachowania programu**. Defender patrzy, *co program robi*, 
+i jeśli przypomina to sztuczki złośliwego oprogramowania, na wszelki wypadek blokuje plik. 
+„DefenseEvasion” to mniej więcej „omijanie zabezpieczeń”.
 
-## Co programy robią „podejrzanego”
+## Co wcześniejsze wersje programów robiły „podejrzanego”
 
 W szablonie moich programów SunGo jest taka funkcja, wywoływana przy każdym starcie:
 
@@ -55,21 +62,13 @@ Dla Defendera wygląda to więc jak klasyczne omijanie zabezpieczeń. Stąd alar
 Do tego funkcja właściwie i tak jest bezużyteczna: SmartScreen sprawdza plik **przed** uruchomieniem, 
 czyli zanim ten kod w ogóle zdąży się wykonać. Umieściłem ją wsumie niejako testowo. 
 
-##  Zmiany w kolejnych wersjach --- 
+# Zmiany 
 
-- **Funkcja `removeZoneIdentifier()` zostanie usunięta z Programów**  Program niczego już nie będzie kasował i nie bedzie dotykł swojego pliku.
-- Usuną ją też z szablonu nowych projektów.
+- **Funkcja `removeZoneIdentifier()` została usunięta z Programów**  Programyh niczego dziwnego nie robi !! 
 
+**Jeśli masz wątpliwości, pytaj śmiało na forum https://forum.lothar-team.pl/viewtopic.php?t=1121.**
 
-## Co możesz zrobić
-
-Jeśli Defender zablokował Ci plik:
-
-1. Jeśli chcesz odzyskać starą: **Zabezpieczenia Windows → Ochrona przed wirusami i zagrożeniami → Historia ochrony** → wpis z SunMDView → **Przywróć**.
-2. Poczekaj na nowe wydanie toolsów.
-
-Programy są podpisane moim własnym certyfikatem. Jeśli masz wątpliwości, pytaj śmiało na forum https://forum.lothar-team.pl/viewtopic.php?t=1121. 
-
+---
 ---
 
 | Narzędzie | Do czego służy | Pobierz |
