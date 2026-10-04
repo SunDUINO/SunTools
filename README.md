@@ -17,7 +17,9 @@ Każde narzędzie to **jeden plik `.exe`**: bez instalatora, wystarczy pobrać i
 
 # ⚠️ SunTools a Windows Defender: -- > **fałszywy alarm**
 
-(**Funkcja `removeZoneIdentifier()` została usunięta z Programów**) 
+<details>
+<summary>Czytaj więcej ...</summary>
+
 
 Kilka osób mogło zobaczyć, że **Windows Defender przeniósł któryś program do kwarantanny**. Zgłoszenie wyglądało tak:
 
@@ -62,11 +64,12 @@ Dla Defendera wygląda to więc jak klasyczne omijanie zabezpieczeń. Stąd alar
 Do tego funkcja właściwie i tak jest bezużyteczna: SmartScreen sprawdza plik **przed** uruchomieniem, 
 czyli zanim ten kod w ogóle zdąży się wykonać. Umieściłem ją wsumie niejako testowo. 
 
+</details>
+
 # Zmiany 
 
-- **Funkcja `removeZoneIdentifier()` została usunięta z Programów**  Programyh niczego dziwnego nie robi !! 
-
-**Jeśli masz wątpliwości, pytaj śmiało na forum https://forum.lothar-team.pl/viewtopic.php?t=1121.**
+- **Funkcja `removeZoneIdentifier()` została usunięta z Programów**  Programy niczego już nie omijają !! 
+- **Jeśli masz wątpliwości, pytaj śmiało na forum https://forum.lothar-team.pl/viewtopic.php?t=1121.**
 
 ---
 ---
