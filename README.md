@@ -13,6 +13,64 @@ Każde narzędzie to **jeden plik `.exe`**: bez instalatora, wystarczy pobrać i
 - **SunDEBUnal**: serial port (COM/UART) terminal for embedded work: text/HEX modes, built-in VT220/ANSI emulator, F1–F8 macro keys, signal lines, auto port detection, device-to-terminal commands, logging.
 
 ---
+# ⚠️ SunTools a Windows Defender: -- > **fałszywy alarm**
+
+Kilka osób mogło zobaczyć, że **Windows Defender przeniósł któryś program do kwarantanny**. Zgłoszenie wyglądało tak:
+
+> **Behavior:Win32/DefenseEvasion.A!ml** lub podobny..
+
+**Spokojnie, w programie nie ma wirusa.** Oto, co się stało.
+
+To nie jest znaleziony wirus ani podejrzany kawałek kodu. Końcówka **!ml** oznacza ocenę **uczenia maszynowego na podstawie zachowania programu**. Defender patrzy, *co program robi*, i jeśli przypomina to sztuczki złośliwego oprogramowania, na wszelki wypadek blokuje plik. „DefenseEvasion” to po polsku mniej więcej „omijanie zabezpieczeń”.
+
+## Co programy robią „podejrzanego”
+
+W szablonie moich programów SunGo jest taka funkcja, wywoływana przy każdym starcie:
+
+
+```go
+// removeZoneIdentifier usuwa znacznik "Zone.Identifier" (Mark of the Web)
+// z własnego pliku .exe na Windows, żeby SmartScreen nie blokował programu
+// po pobraniu/skopiowaniu z internetu. Na innych systemach nic nie robi.
+
+func removeZoneIdentifier() {
+	if runtime.GOOS != "windows" {
+		return
+	}
+	exePath, err := os.Executable()
+	if err != nil {
+		return
+	}
+	_ = os.Remove(exePath + ":Zone.Identifier")
+}
+```
+
+Każdy plik pobrany z internetu dostaje od Windows ukrytą „karteczkę” **Zone.Identifier** (tzw. *Mark of the Web*) z informacją, 
+że przyszedł z sieci. Na jej podstawie SmartScreen pyta „czy na pewno uruchomić?”.
+
+Funkcja kasuje tę karteczkę **z własnego pliku .exe**, żeby przy kolejnym uruchomieniu SmartScreen już nie marudził. 
+Niestety złośliwe programy robią dokładnie to samo, żeby zatrzeć ślad, że przyszły z internetu. 
+Dla Defendera wygląda to więc jak klasyczne omijanie zabezpieczeń. Stąd alarm.
+
+Do tego funkcja właściwie i tak jest bezużyteczna: SmartScreen sprawdza plik **przed** uruchomieniem, 
+czyli zanim ten kod w ogóle zdąży się wykonać. Umieściłem ją wsumie niejako testowo. 
+
+##  Zmiany w kolejnych wersjach --- 
+
+- **Funkcja `removeZoneIdentifier()` zostanie usunięta z Programów**  Program niczego już nie będzie kasował i nie bedzie dotykł swojego pliku.
+- Usuną ją też z szablonu nowych projektów.
+
+
+## Co możesz zrobić
+
+Jeśli Defender zablokował Ci plik:
+
+1. Jeśli chcesz odzyskać starą: **Zabezpieczenia Windows → Ochrona przed wirusami i zagrożeniami → Historia ochrony** → wpis z SunMDView → **Przywróć**.
+2. Poczekaj na nowe wydanie toolsów.
+
+Programy są podpisane moim własnym certyfikatem. Jeśli masz wątpliwości, pytaj śmiało na forum https://forum.lothar-team.pl/viewtopic.php?t=1121. 
+
+---
 
 | Narzędzie | Do czego służy | Pobierz |
 |---|---|---|
