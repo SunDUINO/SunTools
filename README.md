@@ -16,12 +16,14 @@ Każde narzędzie to **jeden plik `.exe`**: bez instalatora, wystarczy pobrać i
 
 | Narzędzie | Do czego służy | Pobierz |
 |---|---|---|
-| 🎨 **SunWebUI Edytor** (SunGo GUI Builder) | wizualne projektowanie interfejsu → HTML/CSS/JS + szablon backendu Go | [v01.17.00](SunWebUI_edytor_v01.17.00.exe) |
-| 🗄️ **SunGo DB Designer** | projektowanie bazy danych na diagramie → struktury Go, migracje SQL, CRUD | [v01.00.00-beta-17](SunDB_designer_v01.00.00-beta-17.exe) |
-| 📖 **SunMD View** | szybka przeglądarka plików Markdown | [v02.00.00](SunMDView_v02.00.00.exe) |
-| 🔌 **SunDEBUnal** | terminal portu szeregowego (COM/UART) z emulatorem VT220 | [v2.0.0 (forum)](https://forum.lothar-team.pl) |
+| 🎨 **SunGo GUI Builder* ) | wizualne projektowanie interfejsu → WebUI , Fyne, TUI + szablon backendu Go | [v01.17.00](https://forum.lothar-team.pl/viewtopic.php?p=3587#p3587) |
+| 🗄️ **SunGo DB Designer** | projektowanie bazy danych na diagramie → struktury Go, migracje SQL, CRUD | [v01.00.00-beta-17](https://forum.lothar-team.pl/viewtopic.php?t=1119) |
+| 📖 **SunMD View** | szybka przeglądarka plików Markdown | [v02.00.00](https://forum.lothar-team.pl/viewtopic.php?t=1120) |
+| 📖 **SunMD Editor** | prosty edytor tekstu pracujący w Markdown z podpowiadaniem składni | [v02.00.00](https://forum.lothar-team.pl/viewtopic.php?t=1122) |
+| 🔌 **SunDEBUnal** | terminal portu szeregowego (COM/UART) z emulatorem VT220 | [v2.0.0](https://forum.lothar-team.pl/viewtopic.php?p=3592#p3592) |
 
----
+
+--- 
 
 ## 🎨 SunWebUI Edytor (SunGo GUI Builder)
 
