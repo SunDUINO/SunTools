@@ -16,7 +16,7 @@ Każde narzędzie to **jeden plik `.exe`**: bez instalatora, wystarczy pobrać i
 
 | Narzędzie | Do czego służy | Pobierz |
 |---|---|---|
-| 🎨 **SunGo GUI Builder* ) | wizualne projektowanie interfejsu → WebUI , Fyne, TUI + szablon backendu Go | [v01.17.00](https://forum.lothar-team.pl/viewtopic.php?p=3587#p3587) |
+| 🎨 **SunGo GUI Builder** | wizualne projektowanie interfejsu → WebUI , Fyne, TUI + szablon backendu Go | [v01.17.00](https://forum.lothar-team.pl/viewtopic.php?p=3587#p3587) |
 | 🗄️ **SunGo DB Designer** | projektowanie bazy danych na diagramie → struktury Go, migracje SQL, CRUD | [v01.00.00-beta-17](https://forum.lothar-team.pl/viewtopic.php?t=1119) |
 | 📖 **SunMD View** | szybka przeglądarka plików Markdown | [v02.00.00](https://forum.lothar-team.pl/viewtopic.php?t=1120) |
 | 📖 **SunMD Editor** | prosty edytor tekstu pracujący w Markdown z podpowiadaniem składni | [v02.00.00](https://forum.lothar-team.pl/viewtopic.php?t=1122) |
