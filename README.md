@@ -66,8 +66,6 @@ czyli zanim ten kod w ogóle zdąży się wykonać. Umieściłem ją wsumie niej
 
 </details>
 
-# Zmiany 
-
 - **Funkcja `removeZoneIdentifier()` została usunięta z Programów**  Programy niczego już nie omijają !! 
 - **Jeśli masz wątpliwości, pytaj śmiało na forum https://forum.lothar-team.pl/viewtopic.php?t=1121.**
 
