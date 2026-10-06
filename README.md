@@ -72,14 +72,14 @@ czyli zanim ten kod w ogóle zdąży się wykonać. Umieściłem ją wsumie niej
 ---
 ---
 
-| Narzędzie | Do czego służy | Pobierz |
-|---|---|---|
-| 🎨 **SunGo GUI Builder** | wizualne projektowanie interfejsu → WebUI , Fyne, TUI + szablon backendu Go | [v01.17.01](https://forum.lothar-team.pl/viewtopic.php?p=3587#p3587) |
-| 🗄️ **SunGo DB Designer** | projektowanie bazy danych na diagramie → struktury Go, migracje SQL, CRUD | [v01.00.01](https://forum.lothar-team.pl/viewtopic.php?t=1119) |
-| 📖 **SunMD View** | szybka przeglądarka plików Markdown | [v02.00.01](https://forum.lothar-team.pl/viewtopic.php?t=1120) |
-| 📖 **SunMD Editor** | prosty edytor tekstu pracujący w Markdown z podpowiadaniem składni | [v02.00.01](https://forum.lothar-team.pl/viewtopic.php?t=1122) |
-| 🔌 **SunDEBUnal** | terminal portu szeregowego (COM/UART) z emulatorem VT220 | [v2.0.0](https://forum.lothar-team.pl/viewtopic.php?p=3592#p3592) |
-
+| Narzędzie | Do czego służy | System | Pobierz |
+|---|---|---|---|
+| 🎨 **SunWebUI Edytor** | wizualne projektowanie interfejsu → HTML/CSS/JS , Fyne, TUI + szablon backendu Go | Windows | [v01.17.00] |
+| 🗄️ **SunGo DB Designer** | projektowanie bazy danych na diagramie → struktury Go, migracje SQL, CRUD | Windows | [v01.00.01]|
+| 📖 **SunMD View** | szybka przeglądarka plików Markdown | Windows / Linux | [v02.00.01] |
+| 📖 **SunMD Editor** | lekki edytor markdown z podpowiadaniem składni | Windows / Linux | [v02.00.01] |
+| 🔌 **SunDEBUnal** | terminal portu szeregowego (COM/UART) z emulatorem VT220 | Windows | [v2.1.0] |
+| 🔌 **SunVT220** | terminal VT220 (COM/UART/TCP/TELNET) | Windows / Linux | [v01.01.00] |
 
 --- 
 
