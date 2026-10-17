@@ -17,7 +17,6 @@ W tym folderze są linuksowe wersje programów SunTools:
 | SunPLOT           | `SunPLOT_v00.05.00`          | WebKitGTK   |
 | SunVT220          | `SunVT220_v1.10.00`          | Ebitengine (OpenGL) |
 
-Nazwy plików zawierają numer wersji — w poleceniach poniżej podmień je na swoje.
 SunDEBUnal jest tylko na Windows; na Linuksie jego terminal zastępuje **SunVT220**.
 
 ### Wymagania
@@ -141,7 +140,7 @@ This folder contains the Linux builds of the SunTools programs:
 | SunPLOT           | `SunPLOT_v00.05.00`          | WebKitGTK     |
 | SunVT220          | `SunVT220_v1.10.00`          | Ebitengine (OpenGL) |
 
-The file names include the version number — replace them in the commands below with yours.
+
 SunDEBUnal is Windows-only; on Linux use **SunVT220** as the terminal.
 
 ### Requirements
