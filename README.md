@@ -1,12 +1,12 @@
- SunTools
+# SunTools
 
 Zestaw darmowych narzędzi desktopowych dla programistów **Go** i **embedded**, z rodziny **SunGo**.
 Każde narzędzie to **jeden plik wykonywalny**: bez instalatora, wystarczy pobrać i uruchomić.
-Większość programów ma też wersję dla **Linuksa** (folder [`Linux`](Linux)).
+Większość programów ma też wersję dla **Linuksa** (folder [`Linux`](Linux)), a niektóre także dla **Androida** (folder [`Android`](Android)).
 
 ## 🇬🇧 English
 
-**SunTools** is a set of free, single-file desktop tools for Go and embedded developers (Windows, most of them also Linux):
+**SunTools** is a set of free, single-file desktop tools for Go and embedded developers (Windows, most of them also Linux, some also Android):
 
 - **SunWebUI Editor**: drag-and-drop GUI designer that exports HTML/CSS/JS, Fyne or TUI plus a Go backend template.
 - **SunGo DB Designer**: visual database designer that generates Go structs, SQL migrations, CRUD on `database/sql` and validation. Supports SQLite, PostgreSQL and MySQL/MariaDB. [User manual](Manuals/SunGo_DB_Designer_user_manual.md).
@@ -15,6 +15,7 @@ Większość programów ma też wersję dla **Linuksa** (folder [`Linux`](Linux)
 - **SunDEBUnal**: serial port (COM/UART) and TCP/Telnet terminal for embedded work: text/HEX modes, built-in VT220/ANSI emulator, F1–F8 macro keys, signal lines, auto port detection, device-to-terminal commands, logging.
 - **SunVT220**: retro VT220/ANSI terminal over COM, TCP, Telnet and **SSH**, with amber/green/white phosphor and CRT effect, TTF/OTF fonts.
 - **SunPLOT**: live plotter for data sent by a microcontroller over UART or TCP: multiple panes, oscilloscope-style trigger, A/B cursors, moving average, CSV/PNG export.
+- **SunGopher AI**: desktop AI agent with its own personality: ChatGPT, Gemini, Claude and local Ollama in one window, skills and tool calling, camera and Vision. Windows, Linux and **Android** (conversations sync with the PC over the home network). [Android guide](Android/ANDROID.EN.md).
 
 ---
 ---
@@ -76,17 +77,18 @@ czyli zanim ten kod w ogóle zdąży się wykonać. Umieściłem ją w sumie nie
 ---
 ---
 
-| Narzędzie | Do czego służy | Windows | Linux |
-|---|---|---|---|
-| 🎨 **SunWebUI Edytor** | wizualne projektowanie interfejsu → HTML/CSS/JS, Fyne, TUI + szablon backendu Go | [v01.17.01](SunWebUI_edytor_v01.17.01.exe) | [v01.17.01](Linux/SunWebUI_edytor_v01.17.01) |
-| 🗄️ **SunGo DB Designer** | projektowanie bazy danych na diagramie → struktury Go, migracje SQL, CRUD | [v01.00.01](SunDB_designer_v01.00.01.exe) | [v01.00.01](Linux/SunDB_designer_v01.00.01) |
-| 📖 **SunMD View** | szybka przeglądarka plików Markdown | [v02.03.02](SunMDView_v02.03.02.exe) | [v02.00.02](Linux/SunMDView_v02.00.02) |
-| 📝 **SunMD Editor** | edytor Markdown z podglądem na żywo i podpowiadaniem składni | [v02.02.02](SunMD_Editor_v02.02.02.exe) | [v02.00.02](Linux/SunMD_Editor_v02.00.02) |
-| 🔌 **SunDEBUnal** | terminal portu szeregowego (COM/UART) i TCP/Telnet z emulatorem VT220 | [v2.1.0](SunDEBUnal_v2.1.0.exe) | – |
-| 🖥️ **SunVT220** | terminal VT220 (COM / TCP / Telnet / SSH) | [v01.10.00](SunVT220_v01.10.00.exe) | [v01.10.00](Linux/SunVT220_v1.10.00) |
-| 📈 **SunPLOT** | wykres na żywo danych z mikrokontrolera (UART / TCP) | [v00.05.00](SunPLOT_v00.05.00.exe) | [v00.05.00](Linux/SunPLOT_v00.05.00) |
+| Narzędzie | Do czego służy | Windows | Linux | Android |
+|---|---|---|---|---|
+| 🎨 **SunWebUI Edytor** | wizualne projektowanie interfejsu → HTML/CSS/JS, Fyne, TUI + szablon backendu Go | [v01.17.01](SunWebUI_edytor_v01.17.01.exe) | [v01.17.01](Linux/SunWebUI_edytor_v01.17.01) | – |
+| 🗄️ **SunGo DB Designer** | projektowanie bazy danych na diagramie → struktury Go, migracje SQL, CRUD | [v01.00.01](SunDB_designer_v01.00.01.exe) | [v01.00.01](Linux/SunDB_designer_v01.00.01) | – |
+| 📖 **SunMD View** | szybka przeglądarka plików Markdown | [v02.03.02](SunMDView_v02.03.02.exe) | [v02.00.02](Linux/SunMDView_v02.00.02) | – |
+| 📝 **SunMD Editor** | edytor Markdown z podglądem na żywo i podpowiadaniem składni | [v02.02.02](SunMD_Editor_v02.02.02.exe) | [v02.00.02](Linux/SunMD_Editor_v02.00.02) | – |
+| 🔌 **SunDEBUnal** | terminal portu szeregowego (COM/UART) i TCP/Telnet z emulatorem VT220 | [v2.1.0](SunDEBUnal_v2.1.0.exe) | – | – |
+| 🖥️ **SunVT220** | terminal VT220 (COM / TCP / Telnet / SSH) | [v01.10.00](SunVT220_v01.10.00.exe) | [v01.10.00](Linux/SunVT220_v1.10.00) | – |
+| 📈 **SunPLOT** | wykres na żywo danych z mikrokontrolera (UART / TCP) | [v00.05.00](SunPLOT_v00.05.00.exe) | [v00.05.00](Linux/SunPLOT_v00.05.00) | – |
+| 🤖 **SunGopher AI** | desktopowy agent AI: ChatGPT, Gemini, Claude i lokalna Ollama w jednym oknie | [v01.11.00](SunGopher_AI_v01.11.00.exe) | [v01.11.00](Linux/SunGopher_AI_v01.11.00) | [v01.11.00](Android/SunGopher_AI-android_v01.11.00.apk) |
 
-Instrukcje: **SunGo DB Designer** [PL](Manuals/SunGo_DB_Designer_instrukcja.md) · [EN](Manuals/SunGo_DB_Designer_user_manual.md) · instalacja na Linuksie: [Linux/readme.md](Linux/readme.md)
+Instrukcje: **SunGo DB Designer** [PL](Manuals/SunGo_DB_Designer_instrukcja.md) · [EN](Manuals/SunGo_DB_Designer_user_manual.md) · **SunGopher AI na Androida** [PL](Android/ANDROID.PL.md) · [EN](Android/ANDROID.EN.md) · instalacja na Linuksie: [Linux/readme.md](Linux/readme.md)
 
 --- 
 
@@ -182,6 +184,27 @@ Wykres na żywo tego, co wysyła mikrokontroler, czyli Serial Plotter z Arduino,
 - **średnia krocząca** dla każdej serii, legenda z min / max / średnią, konsola z wysyłaniem komend,
 - eksport do **CSV** i **PNG**, własny silnik rysowania (płynnie nawet przy 921600 bodów).
 
+## 🤖 SunGopher AI
+
+Mały agent AI na pulpicie, nazywa się **Gophersun** i ma własną osobowość. Silnik wybierasz sam, także lokalny przez **Ollamę**, bez wysyłania danych w świat. Powstał dla zabawy, a jest tak dobry, jak podłączony do niego model.
+
+- silniki: **OpenAI (ChatGPT)**, **Google Gemini**, **Anthropic (Claude)**, **OpenRouter** i **Ollama** (modele lokalne, tylko na komputerze),
+- klucze API wpisuje się w oknie ustawień i działają od razu, bez restartu,
+- historia rozmów zapisywana w **SQLite**,
+- **skille** i wywoływanie narzędzi przez model,
+- zdjęcie z kamery jako załącznik i skill **Vision** (agent sam może poprosić o zdjęcie),
+- Windows, Linux i **Android**.
+
+### 📱 Wersja na Androida
+
+Ten sam backend w Go i ten sam interfejs co na komputerze, dopasowany do ekranu telefonu. Plik: [`Android/SunGopher_AI-android_v01.11.00.apk`](Android/SunGopher_AI-android_v01.11.00.apk).
+
+- **synchronizacja rozmów** z komputerem w sieci domowej (od wersji desktopowej v1.10.00): parowanie kodem QR, szyfrowanie TLS 1.3, bez serwerów pośredniczących,
+- aparat w telefonie: zdjęcie jako załącznik i **podgląd na żywo**, przez który agent może sam patrzeć,
+- tylko modele online (Ollama działa wyłącznie na komputerze); klucze API ustawia się osobno na każdym urządzeniu.
+
+Instalacja, parowanie i rozwiązywanie problemów: [Android/ANDROID.PL.md](Android/ANDROID.PL.md) · [English](Android/ANDROID.EN.md).
+
 ---
 
 ## Wymagania
@@ -189,7 +212,7 @@ Wykres na żywo tego, co wysyła mikrokontroler, czyli Serial Plotter z Arduino,
 **Windows**
 
 - Windows 10 / 11,
-- programy na WebView2 (SunWebUI Edytor, DB Designer, SunMD View, SunMD Editor, SunPLOT): **Microsoft Edge WebView2 Runtime**; na Windows 11 jest zawsze, na Windows 10 instaluje się razem z Edge,
+- programy na WebView2 (SunWebUI Edytor, DB Designer, SunMD View, SunMD Editor, SunPLOT, SunGopher AI): **Microsoft Edge WebView2 Runtime**; na Windows 11 jest zawsze, na Windows 10 instaluje się razem z Edge,
 - SunDEBUnal: **.NET Framework 3.5**,
 - SunVT220: nic dodatkowego.
 
@@ -201,11 +224,19 @@ Wykres na żywo tego, co wysyła mikrokontroler, czyli Serial Plotter z Arduino,
 
 Szczegóły i rozwiązywanie problemów: [Linux/readme.md](Linux/readme.md).
 
+**Android**
+
+- Android 8.0 lub nowszy, procesor ARM64 (`arm64-v8a`), praktycznie każdy telefon z ostatnich lat,
+- aplikacja jest spoza Sklepu Play: przy instalacji zezwól na **instalowanie nieznanych aplikacji**, a jeśli Play Protect ostrzeże, wybierz **Więcej szczegółów → Zainstaluj mimo to**,
+- aktualizacja: zainstaluj nowszy plik `.apk` na istniejący, rozmowy i ustawienia zostają.
+
+Szczegóły: [Android/ANDROID.PL.md](Android/ANDROID.PL.md).
+
 > ⚠️ Pliki `.exe` są podpisane cyfrowo certyfikatem własnym autora (lokalnym), a nie certyfikatem komercyjnego urzędu certyfikacji. Windows nie zna takiego certyfikatu, więc przy pierwszym uruchomieniu SmartScreen może pokazać ostrzeżenie. Kliknij **Więcej informacji → Uruchom mimo to**.
 
 ## Technologia
 
-Narzędzia SunGo: Go + [webview_go](https://github.com/webview/webview_go) (WebView2 na Windows, WebKitGTK na Linuksie), interfejs wbudowany w plik wykonywalny. SunVT220: Go + [Ebitengine](https://ebitengine.org). SunDEBUnal: C# WinForms. Wszystkie narzędzia mają wersję **polską i angielską**.
+Narzędzia SunGo: Go + [webview_go](https://github.com/webview/webview_go) (WebView2 na Windows, WebKitGTK na Linuksie), interfejs wbudowany w plik wykonywalny. SunGopher AI na Androida: backend Go uruchamiany w aplikacji Kotlin z WebView, ten sam interfejs co na komputerze. SunVT220: Go + [Ebitengine](https://ebitengine.org). SunDEBUnal: C# WinForms. Wszystkie narzędzia mają wersję **polską i angielską**.
 
 ---
 
