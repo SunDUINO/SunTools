@@ -38,7 +38,7 @@ The Android version supports **online models only**. Local Ollama is available o
 
 ### Option 1 — APK on the phone
 
-1. Download `SunGopher_AI-android-*.apk` from **[Releases](../../releases)**.
+1. Download `SunGopher_AI-android-*.apk`.
 2. Open the downloaded file on your phone (from the notification or the *Files* app).
 3. If Android asks for permission to **install unknown apps**, allow it for the browser or file manager you're opening the APK from.
 4. Tap **Install**.
