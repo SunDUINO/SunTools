@@ -36,7 +36,7 @@ Wersja na Androida obsługuje **wyłącznie modele online**. Lokalna Ollama jest
 
 ### Sposób 1 — plik APK na telefonie
 
-1. Pobierz plik `SunGopher_AI-android-*.apk` z zakładki **[Releases](../../releases)**.
+1. Pobierz plik `SunGopher_AI-android-*.apk` .
 2. Otwórz pobrany plik na telefonie (np. z powiadomienia albo w aplikacji *Pliki*).
 3. Jeśli Android zapyta o zgodę na **instalowanie nieznanych aplikacji**, zezwól przeglądarce lub menedżerowi plików, z którego otwierasz APK.
 4. Stuknij **Zainstaluj**.
