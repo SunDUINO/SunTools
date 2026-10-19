@@ -197,7 +197,7 @@ Mały agent AI na pulpicie, nazywa się **Gophersun** i ma własną osobowość.
 
 ### 📱 Wersja na Androida
 
-Ten sam backend w Go i ten sam interfejs co na komputerze, dopasowany do ekranu telefonu. Plik: [`Android/SunGopher_AI-android_v01.11.00.apk`](Android/SunGopher_AI-android_v01.11.00.apk).
+Ten sam backend w Go i ten sam interfejs co na komputerze, dopasowany do ekranu telefonu. Plik: [`Android/SunGopher_AI-android_v01.12.02.apk`](Android/SunGopher_AI-android_v01.12.02.apk).
 
 - **synchronizacja rozmów** z komputerem w sieci domowej (od wersji desktopowej v1.10.00): parowanie kodem QR, szyfrowanie TLS 1.3, bez serwerów pośredniczących,
 - aparat w telefonie: zdjęcie jako załącznik i **podgląd na żywo**, przez który agent może sam patrzeć,
