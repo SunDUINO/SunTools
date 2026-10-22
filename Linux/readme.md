@@ -15,7 +15,7 @@ W tym folderze są linuksowe wersje programów SunTools:
 | SunMD View        | `SunMDView_v02.00.02`        | WebKitGTK   |
 | SunMD Editor      | `SunMD_Editor_v02.00.02`     | WebKitGTK   |
 | SunPLOT           | `SunPLOT_v00.05.00`          | WebKitGTK   |
-| SunGopher AI      | `SunGopher_AI_v01.14.00`     | WebKitGTK   |
+| SunGopher AI      | `SunGopher_AI_v01.21.00`     | WebKitGTK   |
 | SunVT220          | `SunVT220_v1.10.00`          | Ebitengine (OpenGL) |
 
 Nazwy plików zawierają numer wersji — w poleceniach poniżej podmień je na swoje.
@@ -93,7 +93,7 @@ sudo install -m 755 SunMDView_v02.00.02 /usr/local/bin/sunmdview
 sudo install -m 755 SunMD_Editor_v02.00.02 /usr/local/bin/sunmd_editor
 sudo install -m 755 SunVT220_v1.10.00 /usr/local/bin/sunvt220
 sudo install -m 755 SunPLOT_v00.05.00 /usr/local/bin/sunplot
-sudo install -m 755 SunGopher_AI_v01.14.00 /usr/local/bin/sungopher
+sudo install -m 755 SunGopher_AI_v01.21.00 /usr/local/bin/sungopher
 ```
 
 Od tej chwili programy uruchamiają się poleceniami `sunmdview`, `sunmd_editor`, `sunvt220`, `sunplot`, `sungopher` (nazwy wybierasz sam).
@@ -141,7 +141,7 @@ This folder contains the Linux builds of the SunTools programs:
 | SunMD View        | `SunMDView_v02.00.02`        | WebKitGTK     |
 | SunMD Editor      | `SunMD_Editor_v02.00.02`     | WebKitGTK     |
 | SunPLOT           | `SunPLOT_v00.05.00`          | WebKitGTK     |
-| SunGopher AI      | `SunGopher_AI_v01.14.00`     | WebKitGTK     |
+| SunGopher AI      | `SunGopher_AI_v01.21.00`     | WebKitGTK     |
 | SunVT220          | `SunVT220_v1.10.00`          | Ebitengine (OpenGL) |
 
 The file names include the version number — replace them in the commands below with yours.
@@ -219,7 +219,7 @@ sudo install -m 755 SunMDView_v02.00.02 /usr/local/bin/sunmdview
 sudo install -m 755 SunMD_Editor_v02.00.02 /usr/local/bin/sunmd_editor
 sudo install -m 755 SunVT220_v1.10.00 /usr/local/bin/sunvt220
 sudo install -m 755 SunPLOT_v00.05.00 /usr/local/bin/sunplot
-sudo install -m 755 SunGopher_AI_v01.14.00 /usr/local/bin/sungopher
+sudo install -m 755 SunGopher_AI_v01.21.00 /usr/local/bin/sungopher
 ```
 
 The programs can then be started with `sunmdview`, `sunmd_editor`, `sunvt220`, `sunplot`, `sungopher` (pick any names you like).
