@@ -17,7 +17,7 @@ The mobile version of the SunGopher AI agent. Same Go backend and same interface
 - [Syncing with your computer](#syncing-with-your-computer)
 - [Data and privacy](#data-and-privacy)
 - [Troubleshooting](#troubleshooting)
-- [Building from source](#building-from-source)
+
 
 ---
 
@@ -157,21 +157,6 @@ Conversations sync with the desktop version of SunGopher AI (v1.10.00+) when **t
 
 ---
 
-## Building from source
-
-Linux (recommended) with:
-
-- Go (version from `go.mod`),
-- JDK 17 or 21,
-- Gradle 8.10+,
-- Android SDK: `platforms;android-35`, `build-tools;35.0.0`, `platform-tools` (**no NDK needed**).
-
-```bash
-export ANDROID_HOME=~/Android/Sdk
-go mod tidy
-bash build_android.sh            # output: bin/SunGopher_AI-android-debug.apk
-INSTALL=1 bash build_android.sh  # + install via adb
-```
 
 ### How it works
 
@@ -183,7 +168,3 @@ INSTALL=1 bash build_android.sh  # + install via adb
 └─────────────────────────────────────┘
 ```
 
-- `src/main.go` — desktop (webview), `src/main_android.go` — Android (no webview), shared core in `src/app.go`.
-- `src/dns_android.go` — DNS for pure Go on Android (no `/etc/resolv.conf`).
-- `src/server/sync.go`, `src/server/sync_tls.go`, `src/storage/sync.go` — sync, TLS and QR pairing.
-- `android/` — Kotlin shell (WebView, camera, permissions, system bar insets).
