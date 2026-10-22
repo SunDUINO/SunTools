@@ -15,7 +15,6 @@ Wersja mobilna agenta SunGopher AI. Ten sam backend w Go i ten sam interfejs co 
 - [Synchronizacja z komputerem](#synchronizacja-z-komputerem)
 - [Dane i prywatność](#dane-i-prywatność)
 - [Rozwiązywanie problemów](#rozwiązywanie-problemów)
-- [Budowanie ze źródeł](#budowanie-ze-źródeł)
 
 ---
 
@@ -153,23 +152,7 @@ Rozmowy synchronizują się z wersją desktopową SunGopher AI (od v1.10.00), gd
 | Kamera nie działa | *Ustawienia Androida → Aplikacje → SunGopher AI → Uprawnienia → Aparat → Zezwól*. |
 | Aplikacja pokazuje *„Backend Go nie wystartował”* | Zbierz logi: `adb logcat -s gophersun` i zgłoś problem w [Issues](../../issues). |
 
----
 
-## Budowanie ze źródeł
-
-Wymagany Linux (zalecany) z:
-
-- Go (wersja z `go.mod`),
-- JDK 17 lub 21,
-- Gradle 8.10+,
-- Android SDK: `platforms;android-35`, `build-tools;35.0.0`, `platform-tools` (**NDK nie jest potrzebne**).
-
-```bash
-export ANDROID_HOME=~/Android/Sdk
-go mod tidy
-bash build_android.sh            # wynik: bin/SunGopher_AI-android-debug.apk
-INSTALL=1 bash build_android.sh  # + instalacja przez adb
-```
 
 ### Jak to działa
 
@@ -181,7 +164,4 @@ INSTALL=1 bash build_android.sh  # + instalacja przez adb
 └─────────────────────────────────────┘
 ```
 
-- `src/main.go` — desktop (webview), `src/main_android.go` — Android (bez webview), wspólny rdzeń w `src/app.go`.
-- `src/dns_android.go` — DNS dla czystego Go na Androidzie (brak `/etc/resolv.conf`).
-- `src/server/sync.go`, `src/server/sync_tls.go`, `src/storage/sync.go` — synchronizacja, TLS i parowanie QR.
-- `android/` — powłoka Kotlin (WebView, kamera, uprawnienia, odsunięcie od pasków systemowych).
+ 
