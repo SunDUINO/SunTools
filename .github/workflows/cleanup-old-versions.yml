@@ -20,7 +20,10 @@ jobs:
   cleanup:
     runs-on: ubuntu-latest
     steps:
+      # ref: main — run czekający w kolejce bierze aktualny stan, a nie SHA swojego pusha
       - uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Usuń starsze wersje i popraw README
         shell: bash
@@ -101,4 +104,8 @@ jobs:
             exit 0
           fi
           git commit -m "Sprzątanie: usunięte starsze wersje, README zaktualizowane"
-          git push
+          # Push odrzucony = w międzyczasie ktoś wrzucił pliki. Ten push uruchomił
+          # już kolejny run, który posprząta od nowa na aktualnym stanie — więc to nie błąd.
+          if ! git push; then
+            echo "::notice::main zmienił się w trakcie — sprzątanie zrobi następny run."
+          fi
