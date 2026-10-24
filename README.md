@@ -83,7 +83,7 @@ czyli zanim ten kod w ogóle zdąży się wykonać. Umieściłem ją w sumie nie
 | 🗄️ **SunGo DB Designer** | projektowanie bazy danych na diagramie → struktury Go, migracje SQL, CRUD | [v01.00.01](SunDB_designer_v01.00.01.exe) | [v01.00.01](Linux/SunDB_designer_v01.00.01) | – |
 | 📖 **SunMD View** | szybka przeglądarka plików Markdown | [v02.03.02](SunMDView_v02.03.02.exe) | [v02.00.02](Linux/SunMDView_v02.00.02) | – |
 | 📝 **SunMD Editor** | edytor Markdown z podglądem na żywo i podpowiadaniem składni | [v02.02.02](SunMD_Editor_v02.02.02.exe) | [v02.00.02](Linux/SunMD_Editor_v02.00.02) | – |
-| 🔌 **SunDEBUnal** | terminal portu szeregowego (COM/UART) i TCP/Telnet z emulatorem VT220 | [v2.1.0](SunDEBUnal_v2.1.0.exe) | – | – |
+| 🔌 **SunDEBUnal** | terminal portu szeregowego (COM/UART) i TCP/Telnet z emulatorem VT220. Wersja Finalna - nie będzie dalej rozwijana. | [v2.1.0](SunDEBUnal_v2.1.0.exe) | – | – |
 | 🖥️ **SunVT220** | terminal VT220 (COM / TCP / Telnet / SSH) | [v01.10.00](SunVT220_v01.10.00.exe) | [v01.10.00](Linux/SunVT220_v1.10.00) | – |
 | 📈 **SunPLOT** | wykres na żywo danych z mikrokontrolera (UART / TCP) | [v00.05.00](SunPLOT_v00.05.00.exe) | [v00.05.00](Linux/SunPLOT_v00.05.00) | – |
 | 🤖 **SunGopher AI** | desktopowy agent AI: ChatGPT, Gemini, Claude i lokalna Ollama w jednym oknie | [v01.21.00](SunGopher_AI_v01.21.00.exe) | [v01.21.00](Linux/SunGopher_AI_v01.21.00) | [v01.21.00](Android/SunGopher_AI-android_v01.21.00.apk) |
