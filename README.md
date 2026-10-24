@@ -16,6 +16,7 @@ Większość programów ma też wersję dla **Linuksa** (folder [`Linux`](Linux)
 - **SunVT220**: retro VT220/ANSI terminal over COM, TCP, Telnet and **SSH**, with amber/green/white phosphor and CRT effect, TTF/OTF fonts.
 - **SunPLOT**: live plotter for data sent by a microcontroller over UART or TCP: multiple panes, oscilloscope-style trigger, A/B cursors, moving average, CSV/PNG export.
 - **SunGopher AI**: desktop AI agent with its own personality: ChatGPT, Gemini, Claude and local Ollama in one window, skills and tool calling, camera and Vision. Windows, Linux and **Android** (conversations sync with the PC over the home network). [Android guide](Android/ANDROID.EN.md).
+- **SunRelease Wizard** (beta): release helper for Go projects: collects ready builds from `bin`, checks that the version in code, file names and git match, makes forum packages (7z / tar.gz / zip + SHA256SUMS), a Markdown post draft and uploads files to a GitHub repo in one commit.
 
 ---
 ---
@@ -86,8 +87,8 @@ czyli zanim ten kod w ogóle zdąży się wykonać. Umieściłem ją w sumie nie
 | 🔌 **SunDEBUnal** | terminal portu szeregowego (COM/UART) i TCP/Telnet z emulatorem VT220. Wersja Finalna - nie będzie dalej rozwijana. | [v2.1.0](SunDEBUnal_v2.1.0.exe) | – | – |
 | 🖥️ **SunVT220** | terminal VT220 (COM / TCP / Telnet / SSH) | [v01.10.00](SunVT220_v01.10.00.exe) | [v01.10.00](Linux/SunVT220_v1.10.00) | – |
 | 📈 **SunPLOT** | wykres na żywo danych z mikrokontrolera (UART / TCP) | [v00.05.00](SunPLOT_v00.05.00.exe) | [v00.05.00](Linux/SunPLOT_v00.05.00) | – |
-| 🤖 **SunGopher AI** | desktopowy agent AI: ChatGPT, Gemini, Claude i lokalna Ollama w jednym oknie | [v01.21.00](SunGopher_AI_v01.21.00.exe) | [v01.21.00](Linux/SunGopher_AI_v01.21.00) | [v01.21.00](Android/SunGopher_AI-android_v01.21.00.apk) |
-|  **SunRelease_Wizard** | zarządzanie wydaniami release i umieszczanie ich w repozytoriach jednym commitem |[v00.01.00](SunRelease_Wizard_v00.01.00.exe) | [v00.01.00](SunRelease_Wizard_v00.01.00) | - |
+| 🤖 **SunGopher AI** | desktopowy agent AI: ChatGPT, Gemini, Claude i lokalna Ollama w jednym oknie | [v01.21.00](SunGopher_AI_v01.21.00.exe) | [v01.21.00](Linux/SunGopher_AI_v01.21.00) · [AppImage](Linux/SunGopher_AI_v01.21.00-x86_64.AppImage) | [v01.21.00](Android/SunGopher_AI-android_v01.21.00.apk) |
+| 📦 **SunRelease Wizard** | wydanie programu: pilnuje wersji, robi paczki na forum, opis w Markdown i wysyła pliki do repo jednym commitem (beta) | [v00.01.00](SunRelease_Wizard_v00.01.00.exe) | [v00.01.00](Linux/SunRelease_Wizard_v00.01.00) · [AppImage](Linux/SunRelease_Wizard_v00.01.00-x86_64.AppImage) | – |
 
 Instrukcje: **SunGo DB Designer** [PL](Manuals/SunGo_DB_Designer_instrukcja.md) · [EN](Manuals/SunGo_DB_Designer_user_manual.md) · **SunGopher AI na Androida** [PL](Android/ANDROID.PL.md) · [EN](Android/ANDROID.EN.md) · instalacja na Linuksie: [Linux/readme.md](Linux/readme.md)
 
@@ -206,6 +207,21 @@ Ten sam backend w Go i ten sam interfejs co na komputerze, dopasowany do ekranu 
 
 Instalacja, parowanie i rozwiązywanie problemów: [Android/ANDROID.PL.md](Android/ANDROID.PL.md) · [English](Android/ANDROID.EN.md).
 
+## 📦 SunRelease Wizard
+
+Wydanie programu bez bólu głowy. Program **niczego nie buduje**: bierze to, co SunGo (lokalnie albo przez SSH) zostawiło w folderze `bin` projektu, sprawdza, czy to na pewno aktualna wersja, i przygotowuje wydanie. Wersja **beta**.
+
+- **pilnuje wersji**: porównuje wersję w kodzie (`main.go`), w nazwach plików w `bin` i w gicie (commit, tag),
+- osobny stan dla **Windows**, **Linux** i **Android**: aktualna, starsza („przebuduj”) albo brak,
+- kopie z próbnych buildów (`Nazwa_v01.21.00_build_3.exe`) są ukryte i **nigdy** nie są oznaczane jako aktualne,
+- **paczki na forum**: `.7z` dla Windows, `.tar.gz` dla Linuksa (z prawem wykonywania), `.zip` dla Androida, do tego `SHA256SUMS.txt`,
+- **wysyłka do repo** na GitHubie: każdy plik do właściwego folderu, podsumowanie „plik → folder” przed wysłaniem, kilka projektów **jednym commitem**,
+- **tryb repo**: przypięte projekty wczytane naraz, z oznaczeniem ⬆ nowa wersja / ✓ już w repo; przycisk „Znajdź po nazwach z repo” sam dopasowuje foldery projektów z workspace,
+- **opis w Markdown** z szablonu (bez AI): wersja, sekcja z `CHANGELOG.md`, tabela plików z rozmiarami i SHA256, linki; zakładka **Podgląd**,
+- nie trzyma haseł ani tokenów: do GitHuba loguje się zwykły `git` przez Git Credential Manager.
+
+Dyskusja i zgłoszenia: [forum](https://forum.lothar-team.pl/viewtopic.php?t=1129).
+
 ---
 
 ## Wymagania
@@ -213,9 +229,10 @@ Instalacja, parowanie i rozwiązywanie problemów: [Android/ANDROID.PL.md](Andro
 **Windows**
 
 - Windows 10 / 11,
-- programy na WebView2 (SunWebUI Edytor, DB Designer, SunMD View, SunMD Editor, SunPLOT, SunGopher AI): **Microsoft Edge WebView2 Runtime**; na Windows 11 jest zawsze, na Windows 10 instaluje się razem z Edge,
+- programy na WebView2 (SunWebUI Edytor, DB Designer, SunMD View, SunMD Editor, SunPLOT, SunGopher AI, SunRelease Wizard): **Microsoft Edge WebView2 Runtime**; na Windows 11 jest zawsze, na Windows 10 instaluje się razem z Edge,
 - SunDEBUnal: **.NET Framework 3.5**,
-- SunVT220: nic dodatkowego.
+- SunVT220: nic dodatkowego,
+- SunRelease Wizard: **Git** (wysyłka do repo) i **7-Zip** (paczki `.7z`; bez niego `.tar.gz` i `.zip` działają dalej).
 
 **Linux**
 
