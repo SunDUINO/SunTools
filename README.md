@@ -87,7 +87,7 @@ czyli zanim ten kod w ogóle zdąży się wykonać. Umieściłem ją w sumie nie
 | 🔌 **SunDEBUnal** | terminal portu szeregowego (COM/UART) i TCP/Telnet z emulatorem VT220. Wersja Finalna - nie będzie dalej rozwijana. | [v2.1.0](SunDEBUnal_v2.1.0.exe) | – | – |
 | 🖥️ **SunVT220** | terminal VT220 (COM / TCP / Telnet / SSH) | [v01.10.00](SunVT220_v01.10.00.exe) | [v01.10.00](Linux/SunVT220_v1.10.00) | – |
 | 📈 **SunPLOT** | wykres na żywo danych z mikrokontrolera (UART / TCP) | [v00.05.00](SunPLOT_v00.05.00.exe) | [v00.05.00](Linux/SunPLOT_v00.05.00) | – |
-| 🤖 **SunGopher AI** | desktopowy agent AI: ChatGPT, Gemini, Claude i lokalna Ollama w jednym oknie | [v01.21.00](SunGopher_AI_v01.21.00.exe) | [v01.21.00](Linux/SunGopher_AI_v01.21.00) · [AppImage](Linux/SunGopher_AI_v01.21.00-x86_64.AppImage) | [v01.21.00](Android/SunGopher_AI-android_v01.21.00.apk) |
+| 🤖 **SunGopher AI** | desktopowy agent AI: ChatGPT, Gemini, Claude i lokalna Ollama w jednym oknie | [v01.22.00](SunGopher_AI_v01.22.00.exe) | [v01.22.00](Linux/SunGopher_AI_v01.22.00) · [AppImage](Linux/SunGopher_AI_v01.22.00-x86_64.AppImage) | [v01.22.00](Android/SunGopher_AI-android_v01.22.00.apk) |
 | 📦 **SunRelease Wizard** | wydanie programu: pilnuje wersji, robi paczki na forum, opis w Markdown i wysyła pliki do repo jednym commitem (beta) | [v00.01.00](SunRelease_Wizard_v00.01.00.exe) | [v00.01.00](Linux/SunRelease_Wizard_v00.01.00) · [AppImage](Linux/SunRelease_Wizard_v00.01.00-x86_64.AppImage) | – |
 
 Instrukcje: **SunGo DB Designer** [PL](Manuals/SunGo_DB_Designer_instrukcja.md) · [EN](Manuals/SunGo_DB_Designer_user_manual.md) · **SunGopher AI na Androida** [PL](Android/ANDROID.PL.md) · [EN](Android/ANDROID.EN.md) · instalacja na Linuksie: [Linux/readme.md](Linux/readme.md)
@@ -199,7 +199,7 @@ Mały agent AI na pulpicie, nazywa się **Gophersun** i ma własną osobowość.
 
 ### 📱 Wersja na Androida
 
-Ten sam backend w Go i ten sam interfejs co na komputerze, dopasowany do ekranu telefonu. Plik: [`Android/SunGopher_AI-android_v01.21.00.apk`](Android/SunGopher_AI-android_v01.21.00.apk).
+Ten sam backend w Go i ten sam interfejs co na komputerze, dopasowany do ekranu telefonu. Plik: [`Android/SunGopher_AI-android_v01.22.00.apk`](Android/SunGopher_AI-android_v01.22.00.apk).
 
 - **synchronizacja rozmów** z komputerem w sieci domowej (od wersji desktopowej v1.10.00): parowanie kodem QR, szyfrowanie TLS 1.3, bez serwerów pośredniczących,
 - aparat w telefonie: zdjęcie jako załącznik i **podgląd na żywo**, przez który agent może sam patrzeć,
