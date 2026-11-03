@@ -12,7 +12,7 @@ W tym folderze są linuksowe wersje programów SunTools:
 |-------------------|------------------------------|-------------|
 | SunWebUI Edytor   | `SunWebUI_edytor_v01.17.01`  | WebKitGTK   |
 | SunGo DB Designer | `SunDB_designer_v01.00.01`   | WebKitGTK   |
-| SunMD View        | `SunMDView_v02.00.02`        | WebKitGTK   |
+| SunMD View        | `SunMDView_v02.05.00`        | WebKitGTK   |
 | SunMD Editor      | `SunMD_Editor_v02.00.02`     | WebKitGTK   |
 | SunPLOT           | `SunPLOT_v00.05.00`          | WebKitGTK   |
 | SunGopher AI      | `SunGopher_AI_v01.22.03`<br>`SunGopher_AI_v01.22.03-x86_64.AppImage` | WebKitGTK   |
@@ -72,8 +72,8 @@ sudo apt install libgl1 libx11-6 libxrandr2 libxcursor1 libxinerama1 libxi6 libx
 ### 2. Uruchom program
 
 ```bash
-chmod +x SunMDView_v02.00.02
-./SunMDView_v02.00.02
+chmod +x SunMDView_v02.05.00
+./SunMDView_v02.05.00
 ```
 
 Tak samo dla pozostałych plików. Można też w menedżerze plików: prawy przycisk → *Właściwości* → *Uprawnienia* → zaznacz *Zezwól na wykonywanie pliku jako programu*, a potem uruchomić dwuklikiem.
@@ -91,7 +91,7 @@ Potem **wyloguj się i zaloguj ponownie**. Bez tego program zobaczy port, ale go
 ### 4. (Opcjonalnie) Instalacja dla wszystkich użytkowników
 
 ```bash
-sudo install -m 755 SunMDView_v02.00.02 /usr/local/bin/sunmdview
+sudo install -m 755 SunMDView_v02.05.00 /usr/local/bin/sunmdview
 sudo install -m 755 SunMD_Editor_v02.00.02 /usr/local/bin/sunmd_editor
 sudo install -m 755 SunVT220_v1.10.00 /usr/local/bin/sunvt220
 sudo install -m 755 SunPLOT_v00.05.00 /usr/local/bin/sunplot
@@ -123,7 +123,7 @@ Brak uprawnień do portu — wykonaj krok 3.
 **Sprawdzenie, czego brakuje:**
 
 ```bash
-ldd ./SunMDView_v02.00.02 | grep "not found"
+ldd ./SunMDView_v02.05.00 | grep "not found"
 ```
 
 Brak wyniku oznacza, że wszystkie biblioteki są na miejscu.
@@ -140,7 +140,7 @@ This folder contains the Linux builds of the SunTools programs:
 |-------------------|------------------------------|---------------|
 | SunWebUI Editor   | `SunWebUI_edytor_v01.17.01`  | WebKitGTK     |
 | SunGo DB Designer | `SunDB_designer_v01.00.01`   | WebKitGTK     |
-| SunMD View        | `SunMDView_v02.00.02`        | WebKitGTK     |
+| SunMD View        | `SunMDView_v02.05.00`        | WebKitGTK     |
 | SunMD Editor      | `SunMD_Editor_v02.00.02`     | WebKitGTK     |
 | SunPLOT           | `SunPLOT_v00.05.00`          | WebKitGTK     |
 | SunGopher AI      | `SunGopher_AI_v01.22.03`<br>`SunGopher_AI_v01.22.03-x86_64.AppImage` | WebKitGTK     |
@@ -200,8 +200,8 @@ sudo apt install libgl1 libx11-6 libxrandr2 libxcursor1 libxinerama1 libxi6 libx
 ### 2. Run the program
 
 ```bash
-chmod +x SunMDView_v02.00.02
-./SunMDView_v02.00.02
+chmod +x SunMDView_v02.05.00
+./SunMDView_v02.05.00
 ```
 
 The same for the other files. Alternatively, in the file manager: right-click → *Properties* → *Permissions* → tick *Allow executing file as program*, then double-click to run.
@@ -219,7 +219,7 @@ Then **log out and log back in**. Without this the program lists the port but ca
 ### 4. (Optional) Install for all users
 
 ```bash
-sudo install -m 755 SunMDView_v02.00.02 /usr/local/bin/sunmdview
+sudo install -m 755 SunMDView_v02.05.00 /usr/local/bin/sunmdview
 sudo install -m 755 SunMD_Editor_v02.00.02 /usr/local/bin/sunmd_editor
 sudo install -m 755 SunVT220_v1.10.00 /usr/local/bin/sunvt220
 sudo install -m 755 SunPLOT_v00.05.00 /usr/local/bin/sunplot
@@ -251,7 +251,7 @@ No permission for the port — do step 3.
 **Checking what is missing:**
 
 ```bash
-ldd ./SunMDView_v02.00.02 | grep "not found"
+ldd ./SunMDView_v02.05.00 | grep "not found"
 ```
 
 No output means all libraries are in place.
