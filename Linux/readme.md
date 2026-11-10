@@ -14,7 +14,7 @@ W tym folderze są linuksowe wersje programów SunTools:
 | SunGo DB Designer | `SunDB_designer_v01.00.01`   | WebKitGTK   |
 | SunMD View        | `SunMDView_v02.05.00`        | WebKitGTK   |
 | SunMD Editor      | `SunMD_Editor_v02.00.02`     | WebKitGTK   |
-| SunPLOT           | `SunPLOT_v00.05.00`          | WebKitGTK   |
+| SunPLOT           | `SunPLOT_v00.05.01`          | WebKitGTK   |
 | SunGopher AI      | `SunGopher_AI_v01.23.00`<br>`SunGopher_AI_v01.23.00-x86_64.AppImage` | WebKitGTK   |
 | SunRelease Wizard | `SunRelease_Wizard_v00.01.00`<br>`SunRelease_Wizard_v00.01.00-x86_64.AppImage` | WebKitGTK |
 | SunVT220          | `SunVT220_v01.20.11`          | Ebitengine (OpenGL) |
@@ -94,7 +94,7 @@ Potem **wyloguj się i zaloguj ponownie**. Bez tego program zobaczy port, ale go
 sudo install -m 755 SunMDView_v02.05.00 /usr/local/bin/sunmdview
 sudo install -m 755 SunMD_Editor_v02.00.02 /usr/local/bin/sunmd_editor
 sudo install -m 755 SunVT220_v01.20.11 /usr/local/bin/sunvt220
-sudo install -m 755 SunPLOT_v00.05.00 /usr/local/bin/sunplot
+sudo install -m 755 SunPLOT_v00.05.01 /usr/local/bin/sunplot
 sudo install -m 755 SunGopher_AI_v01.23.00 /usr/local/bin/sungopher
 ```
 
@@ -142,7 +142,7 @@ This folder contains the Linux builds of the SunTools programs:
 | SunGo DB Designer | `SunDB_designer_v01.00.01`   | WebKitGTK     |
 | SunMD View        | `SunMDView_v02.05.00`        | WebKitGTK     |
 | SunMD Editor      | `SunMD_Editor_v02.00.02`     | WebKitGTK     |
-| SunPLOT           | `SunPLOT_v00.05.00`          | WebKitGTK     |
+| SunPLOT           | `SunPLOT_v00.05.01`          | WebKitGTK     |
 | SunGopher AI      | `SunGopher_AI_v01.23.00`<br>`SunGopher_AI_v01.23.00-x86_64.AppImage` | WebKitGTK     |
 | SunRelease Wizard | `SunRelease_Wizard_v00.01.00`<br>`SunRelease_Wizard_v00.01.00-x86_64.AppImage` | WebKitGTK |
 | SunVT220          | `SunVT220_v01.20.11`          | Ebitengine (OpenGL) |
@@ -222,7 +222,7 @@ Then **log out and log back in**. Without this the program lists the port but ca
 sudo install -m 755 SunMDView_v02.05.00 /usr/local/bin/sunmdview
 sudo install -m 755 SunMD_Editor_v02.00.02 /usr/local/bin/sunmd_editor
 sudo install -m 755 SunVT220_v01.20.11 /usr/local/bin/sunvt220
-sudo install -m 755 SunPLOT_v00.05.00 /usr/local/bin/sunplot
+sudo install -m 755 SunPLOT_v00.05.01 /usr/local/bin/sunplot
 sudo install -m 755 SunGopher_AI_v01.23.00 /usr/local/bin/sungopher
 ```
 
