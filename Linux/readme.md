@@ -17,7 +17,7 @@ W tym folderze są linuksowe wersje programów SunTools:
 | SunPLOT           | `SunPLOT_v00.05.00`          | WebKitGTK   |
 | SunGopher AI      | `SunGopher_AI_v01.23.00`<br>`SunGopher_AI_v01.23.00-x86_64.AppImage` | WebKitGTK   |
 | SunRelease Wizard | `SunRelease_Wizard_v00.01.00`<br>`SunRelease_Wizard_v00.01.00-x86_64.AppImage` | WebKitGTK |
-| SunVT220          | `SunVT220_v1.10.00`          | Ebitengine (OpenGL) |
+| SunVT220          | `SunVT220_v01.20.11`          | Ebitengine (OpenGL) |
 
 Nazwy plików zawierają numer wersji — w poleceniach poniżej podmień je na swoje.
 Gdzie są dwa pliki, to ten sam program w dwóch postaciach — wybierz jeden: zwykłą binarkę albo **AppImage**. Oba uruchamia się tak samo (`chmod +x`, potem `./plik`).
@@ -93,7 +93,7 @@ Potem **wyloguj się i zaloguj ponownie**. Bez tego program zobaczy port, ale go
 ```bash
 sudo install -m 755 SunMDView_v02.05.00 /usr/local/bin/sunmdview
 sudo install -m 755 SunMD_Editor_v02.00.02 /usr/local/bin/sunmd_editor
-sudo install -m 755 SunVT220_v1.10.00 /usr/local/bin/sunvt220
+sudo install -m 755 SunVT220_v01.20.11 /usr/local/bin/sunvt220
 sudo install -m 755 SunPLOT_v00.05.00 /usr/local/bin/sunplot
 sudo install -m 755 SunGopher_AI_v01.23.00 /usr/local/bin/sungopher
 ```
@@ -145,7 +145,7 @@ This folder contains the Linux builds of the SunTools programs:
 | SunPLOT           | `SunPLOT_v00.05.00`          | WebKitGTK     |
 | SunGopher AI      | `SunGopher_AI_v01.23.00`<br>`SunGopher_AI_v01.23.00-x86_64.AppImage` | WebKitGTK     |
 | SunRelease Wizard | `SunRelease_Wizard_v00.01.00`<br>`SunRelease_Wizard_v00.01.00-x86_64.AppImage` | WebKitGTK |
-| SunVT220          | `SunVT220_v1.10.00`          | Ebitengine (OpenGL) |
+| SunVT220          | `SunVT220_v01.20.11`          | Ebitengine (OpenGL) |
 
 The file names include the version number — replace them in the commands below with yours.
 Where there are two files, they are the same program in two forms — pick one: the plain binary or the **AppImage**. Both run the same way (`chmod +x`, then `./file`).
@@ -221,7 +221,7 @@ Then **log out and log back in**. Without this the program lists the port but ca
 ```bash
 sudo install -m 755 SunMDView_v02.05.00 /usr/local/bin/sunmdview
 sudo install -m 755 SunMD_Editor_v02.00.02 /usr/local/bin/sunmd_editor
-sudo install -m 755 SunVT220_v1.10.00 /usr/local/bin/sunvt220
+sudo install -m 755 SunVT220_v01.20.11 /usr/local/bin/sunvt220
 sudo install -m 755 SunPLOT_v00.05.00 /usr/local/bin/sunplot
 sudo install -m 755 SunGopher_AI_v01.23.00 /usr/local/bin/sungopher
 ```
