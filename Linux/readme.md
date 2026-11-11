@@ -18,6 +18,7 @@ W tym folderze są linuksowe wersje programów SunTools:
 | SunGopher AI      | `SunGopher_AI_v01.23.00`<br>`SunGopher_AI_v01.23.00-x86_64.AppImage` | WebKitGTK   |
 | SunRelease Wizard | `SunRelease_Wizard_v00.01.00`<br>`SunRelease_Wizard_v00.01.00-x86_64.AppImage` | WebKitGTK |
 | SunVT220          | `SunVT220_v01.20.11`          | Ebitengine (OpenGL) |
+| SunFlash | [v00.01.00](SunFlash_v00.01.00) | Wgrywanie wsadów: ESP8266/ESP32, AVR, STM32, RP2040 |
 
 Nazwy plików zawierają numer wersji — w poleceniach poniżej podmień je na swoje.
 Gdzie są dwa pliki, to ten sam program w dwóch postaciach — wybierz jeden: zwykłą binarkę albo **AppImage**. Oba uruchamia się tak samo (`chmod +x`, potem `./plik`).
