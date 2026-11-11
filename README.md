@@ -17,6 +17,7 @@ Większość programów ma też wersję dla **Linuksa** (folder [`Linux`](Linux)
 - **SunPLOT**: live plotter for data sent by a microcontroller over UART or TCP: multiple panes, oscilloscope-style trigger, A/B cursors, moving average, CSV/PNG export.
 - **SunGopher AI**: desktop AI agent with its own personality: ChatGPT, Gemini, Claude and local Ollama in one window, skills and tool calling, camera and Vision. Windows, Linux and **Android** (conversations sync with the PC over the home network). [Android guide](Android/ANDROID.EN.md).
 - **SunRelease Wizard** (beta): release helper for Go projects: collects ready builds from `bin`, checks that the version in code, file names and git match, makes forum packages (7z / tar.gz / zip + SHA256SUMS), a Markdown post draft and uploads files to a GitHub repo in one commit.
+- **SunFlash**: Firmware flashing: ESP8266/ESP32, AVR, STM32, RP2040 — a single window for esptool, avrdude, stlink, and picotool.
 
 ---
 ---
@@ -89,11 +90,20 @@ czyli zanim ten kod w ogóle zdąży się wykonać. Umieściłem ją w sumie nie
 | 📈 **SunPLOT** | wykres na żywo danych z mikrokontrolera (UART / TCP) | [v00.05.01](SunPLOT_v00.05.01.exe) | [v00.05.01](Linux/SunPLOT_v00.05.01) | – |
 | 🤖 **SunGopher AI** | desktopowy agent AI: ChatGPT, Gemini, Claude i lokalna Ollama w jednym oknie | [v01.23.00](SunGopher_AI_v01.23.00.exe) | [v01.23.00](Linux/SunGopher_AI_v01.23.00) · [AppImage](Linux/SunGopher_AI_v01.23.00-x86_64.AppImage) | [v01.23.00](Android/SunGopher_AI-android_v01.23.00.apk) |
 | 📦 **SunRelease Wizard** | wydanie programu: pilnuje wersji, robi paczki na forum, opis w Markdown i wysyła pliki do repo jednym commitem (beta) | [v00.01.00](SunRelease_Wizard_v00.01.00.exe) | [v00.01.00](Linux/SunRelease_Wizard_v00.01.00) · [AppImage](Linux/SunRelease_Wizard_v00.01.00-x86_64.AppImage) | – |
-| **SunFlash** | [v00.01.00](SunFlash_v00.01.00.exe) | Wgrywanie wsadów: ESP8266/ESP32, AVR, STM32, RP2040 — jedno okno na esptool, avrdude, stlink i picotool | ✅ | ✅ | - |
+| ⚡**SunFlash** | Wgrywanie wsadów: ESP8266/ESP32, AVR, STM32, RP2040 — jedno okno na esptool, avrdude, stlink i picotool  | [v00.01.00](SunFlash_v00.01.00.exe) | ✅ | ✅ | - |
 
 Instrukcje: **SunGo DB Designer** [PL](Manuals/SunGo_DB_Designer_instrukcja.md) · [EN](Manuals/SunGo_DB_Designer_user_manual.md) · **SunGopher AI na Androida** [PL](Android/ANDROID.PL.md) · [EN](Android/ANDROID.EN.md) · instalacja na Linuksie: [Linux/readme.md](Linux/readme.md)
 
 --- 
+## ⚡ SunFlash (SunDUDEK Reborn)
+
+Jedno, przejrzyste okno do wgrywania wsadów dla czterech głównych rodzin mikrokontrolerów: **ESP8266/ESP32**, **AVR**, **STM32** i **RP2040**. Zamiast dziesiątek okienek konsoli i pamiętania magicznych adresów, dostajesz jedno narzędzie oparte na sprawdzonych programatorach (`esptool`, `avrdude`, `stlink`, `picotool`) napisane w Go.
+
+- **ESP8266/ESP32**: automatyczne wykrywanie układu, import wsadów bezpośrednio z projektów (ESP-IDF, PlatformIO, Arduino) oraz wykres kołowy partycji pamięci,
+- **AVR**: klasyczna obsługa flash/EEPROM oraz czytelny **kalkulator fuse bitów** z opisami po ludzku i oznaczeniem ryzykownych bitów na czerwono,
+- **STM32 i RP2040**: obsługa ST-Linka (SWD), bootloadera UART, wgrywanie plików UF2 z paskiem postępu oraz pełne wsparcie dla `picotool`,
+- **Tryb seryjny**: szybkie programowanie wielu układów taśmowo,
+- lekka aplikacja w jednym pliku bez zbędnych zależności i instalatorów.
 
 ## 🎨 SunWebUI Edytor (SunGo GUI Builder)
 
