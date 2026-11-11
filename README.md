@@ -90,7 +90,7 @@ czyli zanim ten kod w ogóle zdąży się wykonać. Umieściłem ją w sumie nie
 | 📈 **SunPLOT** | wykres na żywo danych z mikrokontrolera (UART / TCP) | [v00.05.01](SunPLOT_v00.05.01.exe) | [v00.05.01](Linux/SunPLOT_v00.05.01) | – |
 | 🤖 **SunGopher AI** | desktopowy agent AI: ChatGPT, Gemini, Claude i lokalna Ollama w jednym oknie | [v01.23.00](SunGopher_AI_v01.23.00.exe) | [v01.23.00](Linux/SunGopher_AI_v01.23.00) · [AppImage](Linux/SunGopher_AI_v01.23.00-x86_64.AppImage) | [v01.23.00](Android/SunGopher_AI-android_v01.23.00.apk) |
 | 📦 **SunRelease Wizard** | wydanie programu: pilnuje wersji, robi paczki na forum, opis w Markdown i wysyła pliki do repo jednym commitem (beta) | [v00.01.00](SunRelease_Wizard_v00.01.00.exe) | [v00.01.00](Linux/SunRelease_Wizard_v00.01.00) · [AppImage](Linux/SunRelease_Wizard_v00.01.00-x86_64.AppImage) | – |
-| ⚡**SunFlash** | Wgrywanie wsadów: ESP8266/ESP32, AVR, STM32, RP2040 — jedno okno na esptool, avrdude, stlink i picotool  | [v00.01.00](SunFlash_v00.01.00.exe) | ✅ | ✅ | - |
+| ⚡ **SunFlash** | Wgrywanie wsadów: ESP8266/ESP32, AVR, STM32, RP2040 — jedno okno na esptool, avrdude, stlink i picotool | [v00.01.00](SunFlash_v00.01.00.exe) | [v00.01.00](Linux/SunFlash_v00.01.00) | – |
 
 Instrukcje: **SunGo DB Designer** [PL](Manuals/SunGo_DB_Designer_instrukcja.md) · [EN](Manuals/SunGo_DB_Designer_user_manual.md) · **SunGopher AI na Androida** [PL](Android/ANDROID.PL.md) · [EN](Android/ANDROID.EN.md) · instalacja na Linuksie: [Linux/readme.md](Linux/readme.md)
 
