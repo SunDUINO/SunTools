@@ -81,7 +81,7 @@ czyli zanim ten kod w ogóle zdąży się wykonać. Umieściłem ją w sumie nie
 
 | Narzędzie | Do czego służy | Windows | Linux | Android |
 |---|---|---|---|---|
-| 🎨 **SunWebUI Edytor** | wizualne projektowanie interfejsu → HTML/CSS/JS, Fyne, TUI + szablon backendu Go | [v01.17.01](SunWebUI_edytor_v01.17.01.exe) | [v01.17.01](Linux/SunWebUI_edytor_v01.17.01) | – |
+| 🎨 **SunWebUI Edytor** | wizualne projektowanie interfejsu → HTML/CSS/JS, Fyne, TUI + szablon backendu Go | [v01.17.02](SunWebUI_edytor_v01.17.02.exe) | [v01.17.01](Linux/SunWebUI_edytor_v01.17.01) | – |
 | 🗄️ **SunGo DB Designer** | projektowanie bazy danych na diagramie → struktury Go, migracje SQL, CRUD | [v01.00.01](SunDB_designer_v01.00.01.exe) | [v01.00.01](Linux/SunDB_designer_v01.00.01) | – |
 | 📖 **SunMD View** | szybka przeglądarka plików Markdown | [v02.05.00](SunMDView_v02.05.00.exe) | [v02.05.00](Linux/SunMDView_v02.05.00) | – |
 | 📝 **SunMD Editor** | edytor Markdown z podglądem na żywo i podpowiadaniem składni | [v02.02.02](SunMD_Editor_v02.02.02.exe) | [v02.00.02](Linux/SunMD_Editor_v02.00.02) | – |
